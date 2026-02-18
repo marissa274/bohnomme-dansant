@@ -83,3 +83,54 @@ button {
     border: none;
     cursor: pointer;
 }
+
+.scene{
+  gap: 60px;
+}
+
+/* Positionner les deux */
+.dancer{
+  transform-origin: bottom center;
+}
+
+/* GARÇON (bleu) */
+.boy .part{ background:#00ffff; }
+.boy .head{ border:5px solid #00ffff; }
+
+/* FILLE (rose) */
+.girl .part{ background:#ff69b4; }
+.girl .head{ border:5px solid #ff69b4; }
+
+/* Cheveux fille */
+.girl .hair{
+  position: absolute;
+  top: -10px;
+  left: -8px;
+  width: 65px;
+  height: 45px;
+  background: #222;
+  border-radius: 30px 30px 20px 20px;
+}
+
+/* Cou fille */
+.girl .neck{
+  width: 8px;
+  height: 12px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Robe fille */
+.girl .dress{
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 60px solid #ff69b4;
+}
